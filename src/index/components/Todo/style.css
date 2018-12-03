@@ -1,0 +1,17 @@
+.todo{
+    height: 100%;
+}
+.todo_list{
+    width: 200px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+.todo_list li{
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.li_finished{
+    color: #0058ff;
+}

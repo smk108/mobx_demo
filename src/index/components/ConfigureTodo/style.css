@@ -1,0 +1,16 @@
+.configure_todo{
+    display: inline-block;
+    width: calc(100% - 200px);
+    height: 100%;
+    vertical-align: top;
+}
+.configure_todo_line{
+    display: inline-block;
+    padding: 10px;
+}
+.configure_todo_tips{
+    padding: 10px;
+}
+.configure_todo_button button{
+    margin: 10px;
+}
