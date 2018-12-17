@@ -9,7 +9,16 @@ import './style.css';
 export default class User extends Component{
     constructor(props){
         super(props);
-        this.state = {};
+        this.state = {
+            userChangeTimes: 0
+        };
+    }
+
+    handleChangeUser(){
+        this.props.userStore.changeUser();
+        let {userChangeTimes} = this.state;
+        userChangeTimes ++ ;
+        this.setState({userChangeTimes});
     }
 
     render(){
@@ -19,7 +28,8 @@ export default class User extends Component{
                 <div className='user_list'>name：{user.name}</div>
                 <div className='user_list'>role：{user.name}</div>
                 <div className='user_list'>{user.isGuest ? `isGuest：${user.isGuest}` : ''}</div>
-                <Button type='primary' onClick={() => this.props.userStore.changeUser()}>Change User</Button>
+                <div>user change times: {this.state.userChangeTimes}</div>
+                <Button type='primary' onClick={this.handleChangeUser.bind(this)}>Change User</Button>
                 <Timer />
             </div>
         );
