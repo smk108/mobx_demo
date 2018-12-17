@@ -21,6 +21,10 @@ export default class User extends Component{
         this.setState({userChangeTimes});
     }
 
+    componentWillReact() {
+        console.log("I will re-render, since the user has changed!");
+    }
+
     render(){
         const {user} = this.props.userStore;
         return(
