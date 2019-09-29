@@ -47,7 +47,6 @@
         "func-names": [2, "as-needed"],
         "import/no-dynamic-require":0,
         "import/no-extraneous-dependencies": 0,
-        "import/extensions": 0,
-
+        "import/extensions": 0
     }
 }
